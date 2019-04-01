@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@RequestMapping("/cart")
 public class CartController {
 
     @Autowired
     private CartService cartService;
 
-    @RequestMapping("findAll")
+    @RequestMapping("/findAll")
     public SysResult findAll(){
         List<Cart> all = cartService.findAll();
         return SysResult.oK(all);

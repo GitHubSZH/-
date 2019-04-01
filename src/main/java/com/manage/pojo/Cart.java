@@ -26,9 +26,12 @@ public class Cart {
      */
     @TableId(type = IdType.AUTO) //表示主键自增
     private Long id;
-    private String cart_type;
-    private Integer cart_size;
+    private String cartName;
+    private String cartType;
+    private Integer cartSize;
     private String picture;
     private Date created;
     private Date updated;
+
+
 }

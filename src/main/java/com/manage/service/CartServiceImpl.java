@@ -15,6 +15,7 @@ public class CartServiceImpl implements  CartService {
 
     @Override
     public List<Cart> findAll() {
-        return cartMapper.selectList(null);
+        System.out.println("执行了！！！");
+        return cartMapper.findAll();
     }
 }
